@@ -18,6 +18,7 @@
     "raf": "3.4.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-draggable": "^4.4.4",
     "react-frame-component": "^4.1.2",
     "resolve": "^1.17.0",
     "styled-components": "^5.3.3",

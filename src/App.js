@@ -1,7 +1,8 @@
 /*global chrome*/
 
 import React, { Component } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
+import exlogo from './icon.png';
 import './App.css';
 
 class App extends Component {
@@ -12,14 +13,14 @@ class App extends Component {
           {this.props.isExt ? 
             <img src={chrome.runtime.getURL("static/media/logo.svg")} className="App-logo" alt="logo" />
           :
-            <img src={logo} className="App-logo" alt="logo" />
+            <img src={exlogo} className="App-logo" alt="logo" />
           }
 
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">This Voice UZEX</h1>
         </header>
-        <p className="App-intro">
+        {/* <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        </p> */}
       </div>
     );
   }

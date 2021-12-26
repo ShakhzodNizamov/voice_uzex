@@ -1,9 +1,11 @@
 .App {
   text-align: center;
+  width: 300px;
+  height: 200px;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  /* animation: App-logo-spin infinite 20s linear; */
   height: 80px;
 }
 
@@ -15,7 +17,8 @@
 }
 
 .App-title {
-  font-size: 1.5em;
+  user-select: none;
+  font-size: 1.1em;
 }
 
 .App-intro {
@@ -23,6 +26,84 @@
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.card-box {
+  /* background-color: aquamarine; */
+  /* min-width: 200px;
+  max-width: 600px;
+  min-height: 200px;
+  max-height: 800px;
+  width: fit-content;*/
+  height: 100%;
+  /* resize: both;
+  overflow: auto;
+  position: fixed;
+  top: 0px;
+  right: 0px; */
+  z-index: 2147483647;
+  /* box-shadow: 0px 0px 5px #0000009e; */
+  padding: 20px;
+}
+
+.audio-wrapper {
+  vertical-align: middle;
+}
+
+.audio-wrapper .audio-play {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+  position: relative;
+}
+
+.audio-wrapper .audio-play:hover .audio-control {
+  display: block;
+}
+
+.audio-wrapper .audio-play img {
+  width: 100%;
+}
+
+.audio-wrapper .audio-play .audio-control {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  left: 0;
+  background-color: white;
+  display: none;
+  padding: 5px;
+  width: 45px;
+  border: 1px solid #ff4800;
+  border-radius: 5px;
+}
+
+.audio-wrapper .audio-play .audio-control button.active-speed {
+  background-color: #ffb600;
+  border-color: #ff4800;
+}
+
+.audio-wrapper .audio-play .audio-control button {
+  display: block;
+  margin: 1px 0;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+.audio-wrapper .audio-tag {
+  display: none;
 }

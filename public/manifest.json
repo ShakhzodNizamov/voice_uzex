@@ -10,15 +10,14 @@
     "default_popup": "index.html",
     "default_title": "Open the popup"
   },
-  "content_scripts" : [
+  "content_scripts": [
     {
-      "matches": [ "<all_urls>" ],
+      "matches": ["<all_urls>"],
       "css": ["/css/root.css"],
       "js": ["/static/js/content.js"]
     }
   ],
-  "web_accessible_resources":[
-    "/static/css/content.css", "/static/media/*"
-  ],
-  "content_security_policy": "script-src 'self' 'sha256-GgRxrVOKNdB4LrRsVPDSbzvfdV4UqglmviH9GoBJ5jk='; object-src 'self'"
+  "web_accessible_resources": ["/static/css/content.css", "/static/media/*"],
+  "content_security_policy": "script-src 'self' 'sha256-GgRxrVOKNdB4LrRsVPDSbzvfdV4UqglmviH9GoBJ5jk='; object-src 'self'",
+  "icons": { "16": "icon.png", "48": "icon.png", "128": "icon.png" }
 }
